@@ -1,0 +1,95 @@
+/* Quote component styles */
+.quote-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quote-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quote-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quote-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.quote-summary {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.quote-services {
+  margin-bottom: 20px;
+}
+
+.quote-service-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.quote-service-name {
+  font-weight: 500;
+}
+
+.quote-service-price {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.quote-total {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #333;
+}
+
+.quote-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.quote-button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quote-button-primary {
+  background: #1976d2;
+  color: white;
+  border: none;
+}
+
+.quote-button-primary:hover {
+  background: #1565c0;
+}
+
+.quote-button-secondary {
+  background: white;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+}
+
+.quote-button-secondary:hover {
+  background: #f5f5f5;
+}

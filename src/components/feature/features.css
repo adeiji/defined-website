@@ -1,0 +1,24 @@
+.features-container {
+    max-width: 1000px !important;
+    margin: 0 auto;
+    padding: 40px 0 0;
+}
+
+.features-title {
+    font-family: 'lemonmilk', sans-serif;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #074a5a;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        max-width: 1000px;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found | Defined Window Cleaning</title>
+    <link rel="icon" href="/logo.png">
+    <meta name="robots" content="noindex, follow">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #074a5a;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #074a5a;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #053642;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            color: #074a5a;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <img src="/logo.png" alt="Defined Window Cleaning Logo" class="logo">
+        
+        <h1>Oops! Page Not Found</h1>
+        
+        <p>We're sorry, but the page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
+        
+        <div class="navigation">
+            <a href="/" class="btn">Home Page</a>
+            <a href="/solar-screens" class="btn">Solar Screens</a>
+            <a href="/powerwashing" class="btn">Power Washing</a>
+            <a href="/estimate" class="btn">Get a Quote</a>
+        </div>
+        
+        <p>Or check out our popular services below:</p>
+        
+        <div class="services">
+            <div class="service-card">
+                <h3>Window Cleaning</h3>
+                <p>Professional window cleaning for homes and businesses in Las Vegas.</p>
+                <a href="/" class="btn">Learn More</a>
+            </div>
+            
+            <div class="service-card">
+                <h3>Solar Screens</h3>
+                <p>Beat the Las Vegas heat with custom solar screen installation.</p>
+                <a href="/solar-screens" class="btn">Learn More</a>
+            </div>
+            
+            <div class="service-card">
+                <h3>Power Washing</h3>
+                <p>Restore your driveway, patio, and exterior surfaces.</p>
+                <a href="/powerwashing" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
