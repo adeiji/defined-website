@@ -51,5 +51,5 @@ type IConfig = {
 }
 
 export const Config = {
-    Env: process.env.NODE_ENV === 'production' ? Production : Debug
+    Env: Production
 }

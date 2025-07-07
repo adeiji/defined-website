@@ -12,6 +12,8 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "predeploy": ["node ../scripts/deploy.js"],
+    "postdeploy": ["node ../scripts/postdeploy.js"]
   }
 }
