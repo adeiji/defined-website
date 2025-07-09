@@ -369,7 +369,7 @@ const Survey = () => {
                                             <strong>If you'd like to share our services with any others, please click the Facebook Share button below.</strong>
                                         </p>
                                         <p>
-                                            <FacebookShareButton url="https://definedcleaning.com" quote="Give them a call or text at (702) 747-0901. Let them know that I referred you and you'll get 15% off">
+                                            <FacebookShareButton url="https://definedcleaning.com">
                                                 <FacebookIcon size={32} round={true}></FacebookIcon> Please click to share us on Facebook
                                             </FacebookShareButton>
                                         </p>
