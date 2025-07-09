@@ -51,5 +51,5 @@ type IConfig = {
 }
 
 export const Config = {
-    Env: Production
+    Env: Debug
 }

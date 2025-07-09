@@ -1266,29 +1266,39 @@ const Quote = (props: {
                         }
                         {
                             !processing && !finished && (
-                                isAdmin ? (
-                                    <Button
-                                        className="modern-cta-button ml-2"
-                                        onClick={sendEstimateEmail}>
-                                        Send Estimate
-                                    </Button>
-                                ) : (
-                                    <Button
-                                        className="modern-cta-button ml-2"
-                                        onClick={(e) => {
-                                            e.preventDefault()
-                                            e.stopPropagation()
+                                <div className="d-flex gap-2">
+                                    {isAdmin ? (
+                                        <Button
+                                            className="modern-cta-button"
+                                            onClick={sendEstimateEmail}>
+                                            Send Estimate
+                                        </Button>
+                                    ) : (
+                                        <>
+                                            <Button
+                                                className="modern-cta-button"
+                                                variant="outline-primary"
+                                                onClick={sendEstimateEmail}>
+                                                Save Estimate
+                                            </Button>
+                                            <Button
+                                                className="modern-cta-button"
+                                                onClick={(e) => {
+                                                    e.preventDefault()
+                                                    e.stopPropagation()
 
-                                            sendQuote()
-                                            // Track with existing Google Ads conversion
-                                            trackConversion(CONSTANTS.CONVERSION_TRACKING.ACCEPT_QUOTE, estimate.Customer?.phoneNumber, estimate.Customer?.email)
-                                            // Track with Microsoft Ads UET
-                                            uet_report_booking_conversion()
+                                                    sendQuote()
+                                                    // Track with existing Google Ads conversion
+                                                    trackConversion(CONSTANTS.CONVERSION_TRACKING.ACCEPT_QUOTE, estimate.Customer?.phoneNumber, estimate.Customer?.email)
+                                                    // Track with Microsoft Ads UET
+                                                    uet_report_booking_conversion()
 
-                                        }}>
-                                        I'm Ready To Book
-                                    </Button>
-                                )
+                                                }}>
+                                                I'm Ready To Book
+                                            </Button>
+                                        </>
+                                    )}
+                                </div>
                             )
                         }
                     </Modal.Footer>

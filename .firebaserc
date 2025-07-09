@@ -1,5 +1,21 @@
 {
   "projects": {
     "default": "dephyned-web"
-  }
+  },
+  "targets": {
+    "dephyned-web": {
+      "hosting": {
+        "definedcleaning": [
+          "definedcleaning"
+        ],
+        "definedcleaningluxury": [
+          "definedcleaningluxury"
+        ],
+        "app": [
+          "app-thedefinedcrm"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
