@@ -13,7 +13,7 @@
         "destination": "/index.html"
       }
     ],
-    "predeploy": ["node scripts/deploy.js"],
+    "predeploy": ["node scripts/deploy.js", "npm run build"],
     "postdeploy": ["node scripts/postdeploy.js"]
   }
 }
